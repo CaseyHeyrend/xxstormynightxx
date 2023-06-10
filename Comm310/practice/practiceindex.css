@@ -1,0 +1,89 @@
+/* AUTHOR : Casey Heyrend */
+* {
+    margin: 0; 
+    padding: 0;
+}
+header, main {
+    font-size: 0;
+}
+figure {-mox-border-radius: 6px; 
+        -webkit-border-radius: 6px; 
+        border-radius: 6px;
+}
+body {
+    background-color: #52471b; 
+    font-family: Arial, sans-serif; 
+    margin: auto; min-width: 870px; 
+    text-align: center;
+}
+header {
+    background-color: #f2cc10; 
+        background-image: url("images/honeycomb.png"); 
+        border-top: 6px solid #87752d; margin-top: 70px;
+}
+	header img {
+            margin-top: -50px;
+        }
+	header h1 {
+            color: #88742b; 
+            font-size: 16px; 
+            font-weight: normal; 
+            margin: 6px 0 15px;
+        }
+nav {
+    background-color: #87752d; 
+    border-top: 2px solid #52471b; 
+    border-bottom: 2px solid #52471b; 
+    padding: 10px 0 6px;
+}
+	nav ul {
+            list-style: none;
+        }
+		nav li {
+                    display: inline; 
+                    margin: 0 30px;
+                }
+			nav a {
+                            font-size: 20px; 
+                            font-weight: bold; 
+                            text-decoration: none;
+                        }
+			nav a:link, nav a:visited {
+                            color: #f8ffb0;
+                        }
+			nav a:hover {
+                            color: #fffc58;
+                        }
+			nav a:active {
+                            color: #fff;
+                        }
+main {
+    background-color: #f8ffb0;  
+    padding: 72px 0 150px;
+}
+figure {
+    background-color: #87752b; 
+    display: inline-block; 
+    margin: 0 3px; 
+    padding: 6px;
+}
+figcaption {
+    color: #f8ffb0;
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-top: 6px;
+}
+blockquote {
+    color: #52471b; 
+    font: italic bold 30px Arial, sans-serif; 
+    margin-top: 50px;
+}		
+footer {
+    border-top: 6px solid #87752d; 
+    color: #f2cc10; 
+    padding: 40px 0;
+}
+	footer p {
+            font-size: 15px; 
+            font-weight: bold;
+        }

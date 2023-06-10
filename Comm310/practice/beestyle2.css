@@ -1,0 +1,125 @@
+/* AUTHOR : Casey Heyrend */
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+
+#globalNav li {
+    -moz-box-shadow: 2px 2px 1px #000;
+    -webkit-box-shadow: 2px 2px 1px #000; 
+    box-shadow: 2px 2px 1px #000;
+}
+section h2 {
+    -mox-border-radius: 30px 30px 0 30px; 
+    -webkit-border-radius: 30px 30px 0 30px; 
+    border-radius: 30px 30px 0 30px;
+}
+footer {
+    -mox-border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-size: 0.8em; 
+    margin: auto;
+    width: 90%;
+}
+
+header h1 {
+    color: #88742b; 
+    font-size: 150%; 
+    letter-spacing: 0.4em; 
+    text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+	h1 {
+            font-size: 24px;
+        }
+	h2 {
+            font-size: 14px; 
+            font-style: italic;
+        }
+
+#globalNav ul {
+    background-color: #f2cc0f; 
+    border: 2px solid #88742b; 
+    height: 200px; 
+    list-style: none; 
+    padding-top: 45px; 
+    width: 20px;
+}
+	#globalNav li {
+            background-color: #88742b; 
+            margin: 0 0 7px -8px; 
+            padding: 6px; 
+            width: 220px;
+        }
+		#globalNav a {
+                    font-weight: bold; 
+                    text-decoration: none;
+                }
+		#globalNav a:link, #globalNav a:visited {
+                    color: #fffcae;
+                }
+		#globalNav a:hover {
+                    color: #f2cc0f;
+                }
+		#globalNav a:active {
+                    color: #fff;
+                }
+#footerNav ul {
+    list-style: none; 
+    padding: 0;
+}
+	#footerNav li {
+            display: inline;
+            padding-right: 15px;
+        }
+		#footerNav a {
+                    font-weight: bold;
+                }
+		#footerNav a:link, #footerNav a:visited {
+                    color: #fffcae;
+                }
+		#footerNav a:hover {
+                    color: #f2cc0f;
+                }
+		#footerNav a:active {
+                    color: #fff;
+                }
+
+	article {
+            background-color: #f2cc0f; 
+            border: 2px solid #88742b; 
+            padding: 30px;
+        }
+	#bees, #blossoms {
+            background-color: #fffcae; 
+            border: 1px solid #88742b;
+            margin: 40px 0 20px; 
+            padding: 30px;
+        }
+	#blossoms {
+            height: 500px; 
+            overflow: scroll;
+        }
+		section h2 {
+                    background-color: #fff; 
+                    border: 1px solid #88742b; 
+                    color: #88742b; 
+                    font-size: 20px; 
+                    display: inline-block; 
+                    font-style: normal; 
+                    margin: -10px 0; 
+                    padding: 10px;
+                }
+footer {
+    background-color: #88742b; 
+    color: #fffcae; 
+    margin-bottom: 20px; 
+    padding: 5px 0; 
+    text-align: center;
+}

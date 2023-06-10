@@ -1,0 +1,38 @@
+/* AUTHOR : Casey Heyrend */
+
+.caps {
+    text-transform: uppercase;
+}
+.showme {
+    background-color: yellow;
+}
+header {
+    border: dashed 1px green;
+}
+li > a {
+    color: red;
+}
+li:nth-child(2){
+    padding: 10px;
+}
+li .bolded {
+    font-weight: bold;
+}
+	p {
+            color: blue;
+        }
+	#production {
+            color: purple;
+        }
+		#production-section p {
+                    color: green;
+                }		
+	#harvesting {
+            color: red;
+        }
+	#bottling {
+            color: brown;
+        }	
+	h1 + p {
+            padding-left: 20px;
+        }
