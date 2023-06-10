@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta charset="UTF-8">
+<style>
+    body {
+        background-color:#5DADEC;
+        font-family: 'Lucida Sans Unicode', sans-serif;
+    }
+</style>
+</head>
+<body>
+    <!-- background-color is Blue Jeans -->
+       <h1>Arrays</h1>
+<!--Here is an array called different types of Storms: Winter, Fire, Wind, Water-base-->
+<button onclick="myStorm()">Click me</button>
+
+<p id="types"></p>
+
+<script>
+var storms = ["Winter", "Fire", "Wind", "Water-base"];
+document.getElementById("types").innerHTML = storms;
+
+function myStorm() {
+    storms.sort();
+    document.getElementById("types").innerHTML = storms;
+}
+</script>
+
+    </body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>
+</footer>
+</html>

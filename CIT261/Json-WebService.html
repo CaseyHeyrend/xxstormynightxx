@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Json Web service</title> 
+        <meta charset="UTF-8">
+<style>
+body {
+        background-color:#33CC99;
+        font-family: Lucida Sans Unicode, sans-serif;
+    }
+</style>
+    </head>
+    <!-- background-color is Shamrock -->
+    <body>
+        <h1>Json Web service</h1>
+        <p>Here are all of the social media</p>
+<div id="media"></div>
+<script>
+var socialArray = [
+{
+"display": "FaceBook",
+"url": "https://www.facebook.com/"
+},
+{
+"display": "Twitter",
+"url": "https://twitter.com"
+},
+{
+"display": "Instagram",
+"url": "https://www.instagram.com"
+},
+{
+"display": "Tumblr",
+"url": "https://www.tumblr.com/"
+}
+];
+
+socialMedia(socialArray);
+
+function socialMedia(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("media").innerHTML = out;
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="http://www.xxstormynightxx.com/Cit-261-Assignments.html">Assignments</a>
+</footer>
+</html>

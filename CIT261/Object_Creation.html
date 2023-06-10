@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Creation</title>
+        <meta charset="UTF-8">
+<style>
+    body {
+        background-color:#AD4379;
+        font-family: 'Lucida Sans Unicode', sans-serif;
+    }
+table {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+</style>
+    </head>
+    <body>
+        <!-- background-color is Mystic Maroon -->
+<h1>Javascript Object</h1>
+<p>Enter the following information to create and display a the Object created with a function.</p>
+<div >
+Dog:              <p style="text-align:justify;"><input type="text" id="dog"=></input></p>
+Cat:              <p style="text-align:justify;"><input type="text" id="cat"=></input></p>
+Favorite Sport:   <p style="text-align:justify;"><input type="text" id="sport"=></input></p>
+Favorite Anime:   <p style="text-align:justify;"><input type="text" id="anime"=></input></p>
+Favorite Color:   <p style="text-align:justify;"><input type="text" id="color"=></input></p>
+</div>
+<p><button onclick="createThings">Submit</button></p>
+ 
+<p id=createdObject></p>
+<br>
+<h1>Object put together</h1>
+<p>Show some plan things. <button onclick="createCreature()">Submit</button></p>
+
+<script>
+function createRandom(dog, cat, sport, anime, color){
+this.Dog = dog;
+this.Cat = cat;
+this.favoriteS = sport;
+this.favoriteA = anime;
+this.favoriteC = color;
+
+}
+</script>
+<script>
+function createThings(){
+var one = document.getElementById("Dog").value;
+var two = document.getElementById("Cat").value;
+var three = document.getElementById("favoriteS").value;
+var four = document.getElementById("favoriteA").value;
+var five = document.getElementById("favoriteC").value;
+
+var createHuman = new createRandom(one, two, three, four, five);
+document.getElementById("createdObject").innerHTML = 
+createHuman.Dog + "," 
++ createHuman.Cat + "," 
++ createHuman.favoriteS + "," 
++ createHuman.favoriteA + "," 
++ createHuman.favoriteC;
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="http://www.xxstormynightxx.com/Cit-261-Assignments.html">Assignments</a>
+</footer>
+</html>

@@ -1,0 +1,51 @@
+body {
+background-image: url("http://weknowyourdreams.com/images/sky/sky-04.jpg");
+background-position:center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+color:black;
+font-family: 'Oswald', sans-serif;
+font-size:14px;
+font-weight:400;
+line-height:20px;
+height:100%;
+min-height:500px;
+margin:0;
+padding:0;
+}
+.search {
+  width: 80%;
+  margin:200px auto;
+  padding: 10px;
+  margin-right:50px;
+  height:100px;
+  float:right;
+  text-align:center;
+}
+
+.search_found {
+  width: 80%;
+  margin:10px auto;
+  padding: 10px;
+  height:100px;
+  float:right;
+text-align:center;
+
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+
+}
+footer {
+   background-color:black;
+   color:white;
+   clear:both;
+   text-align:center;
+   padding:10px;
+} 
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions and Variables</title>
+    <meta charset="UTF-8">
+<style>
+    body {
+        background-color:#5DADEC;
+        font-family: Lucida Sans Unicode, sans-serif;
+    }
+</style>
+</head>
+<body>
+<!-- background-color is Blue Jeans -->
+<h1>Functions and variables</h1>
+<p>This function  will multiply this number: <input type="number" id="int1"=></input> by this number:<input type="number" id="int2"=></input> and this will divide the number:<input type="number" id="int3"=></input></p>
+<p><button onclick="sumInt()">Submit</button></p>
+
+<p id="sumResults"></p>
+<script>
+function sumInt(){
+var int1 = document.getElementById("int1").value;
+var int2 = document.getElementById("int2").value;
+var int3 = document.getElementById("int3").value;
+
+var final = int1 * int2 / int3;
+document.getElementById("sumResults").innerHTML = final;
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>
+</footer>
+</html>

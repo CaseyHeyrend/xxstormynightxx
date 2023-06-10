@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parameters</title>
+    <meta charset="utf-8">
+<style>
+    body {
+        background-color:#5DADEC;
+        font-family: Lucida Sans Unicode, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <!-- background-color is Blue Jeans -->
+<h1>Parameters</h1>
+<p>This function will be passed these (4) parameters then calculate them together.</p>
+<p>Enter a number:
+<input type="number" id="meter1"=></input></p>
+<p>Enter a number:
+<input type="number" id="meter2"=></input></p>
+<p>Enter a number:
+<input type="number" id="meter3"=></input></p>
+<p>Enter a number:
+<input type="number" id="meter4"=></input></p>
+
+<p><button onclick="sumMeter()">Push My Button</button></p>
+
+<p id ="ParameterResults"></p>
+<script>
+function sumMeter() 
+{
+var meter1 = document.getElementById("meter1").value;
+var meter2 = document.getElementById("meter2").value;
+var meter3 = document.getElementById("meter3").value;
+var meter4 = document.getElementById("meter4").value;
+  
+var final = meter1 + meter2 - meter3 * meter4;
+document.getElementById("ParameterResults").innerHTML = final;
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>
+</footer>
+</html>

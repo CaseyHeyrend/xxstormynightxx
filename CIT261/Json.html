@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+        <title>Json</title>
+        <meta charset="UTF-8">
+<style>
+body {
+        background-color:#652DC1;
+        font-family: Lucida Sans Unicode, sans-serif;
+    }
+table {
+    font-family: Lucida Sans Unicode, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #C9A0DC;
+}
+</style>
+</head>
+<!-- background-color is Purple Heart -->
+<!-- Wisteria -->
+<body>
+<h1>Json</h1>
+<p>The Json file is called "Characters.json" this page loads that file, and show the info and displays it below.</p>
+<div id="chara"></div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "Characters.json";
+
+xmlhttp.onreadystatechange=function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this.responseText);
+    }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(response) {
+    var arr = JSON.parse(response);
+    var i;
+    var out = "<table>";
+
+    for(i = 0; i < arr.length; i++) {
+        out += "<tr><td>" +
+        arr[i].lastName +
+        "</td><td>" +
+        arr[i].firstName +
+        "</td><td>";
+    }
+    out += "</table>";
+    document.getElementById("chara").innerHTML = out;
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="http://www.xxstormynightxx.com/Cit-261-Assignments.html">Assignments</a>
+</footer>
+</html>
+
+

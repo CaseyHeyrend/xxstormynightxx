@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 5 Canvas Tag</title>
+    <meta charset="UTF-8">
+<style>
+    body {
+        background-color:#0081AB;
+        font-family: Lucida Sans Unicode, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>HTML 5 Canvas Tag</h1>
+    <!-- background-color is Steel Blue -->
+  <canvas id="CIT261Canvas" width="250" height="100" style="border:2px solid #58427C;"></canvas>
+<script type="text/javascript">
+var can = document.getElementById("CIT261Canvas");
+var con = can.getContext("2d");
+con.font = "25px Lucida Sans Unicode";
+con.fillText("Cit 261 is Magnificent!",5,50);
+con.font = "15px Lucida Sans Unicode";
+con.fillText("(But it is overwhelming!)",35,80);
+con.save();
+con.scale(1, .5);
+con.beginPath();
+con.stroke();
+con.closePath();
+con.restore();
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer><a href="Functions-HTML 5-Tags.html"> Functions HTML 5 Tags</a></footer>
+</html>

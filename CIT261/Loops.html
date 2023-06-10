@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops</title>
+    <meta charset="utf-8">
+<style>
+    body {
+        background-color:#5DADEC;
+        font-family: Lucida Sans Unicode, sans-serif;
+    }
+</style>
+</head>
+<body>
+ <!-- background-color is Blue Jeans -->
+<h1>Loops</h1>
+<h3>This is a for loop</h3>
+<p id="storm"></p>
+
+<script>
+var storms = ["Winter Storms", "Fire Storms", "Wind Storms", "Water-base Storms", "Thunderstorm", "Sandstorms"];
+var text = "";
+var i;
+for (i = 0; i < storms.length; i++) {
+    text += storms[i] + "<br>";
+}
+document.getElementById("storm").innerHTML = text;
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>
+</footer>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Animations</title>
+        <meta charset="UTF-8">
+     <style>
+            body {
+                font-family: 'Lucida Sans Unicode', sans-serif;
+                background-color:#FD5B78;
+            }
+div {
+    width: 150px;
+    height: 150px;
+    background-color: #6B3FA0;
+    position: relative;
+    -webkit-animation-name: colorful;
+    -webkit-animation-duration: 5s;
+    animation-name: colorful;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes colorful {
+    0%   {background-color:#FD0E35; left:0px; top:0px;}
+    25%  {background-color:#FFEB00; left:200px; top:0px;}
+    50%  {background-color:#02A4D3; left:200px; top:200px;}
+    75%  {background-color:#5FA777; left:0px; top:200px;}
+    100% {background-color:#C32148; left:0px; top:0px;}
+}
+
+@keyframes colorful {
+    0%   {background-color:#FD0E35; left:0px; top:0px;}
+    25%  {background-color:#FFEB00; left:200px; top:0px;}
+    50%  {background-color:#02A4D3; left:200px; top:200px;}
+    75%  {background-color:#5FA777; left:0px; top:200px;}
+    100% {background-color:#C32148; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<!-- background-color is Wild Watermelon -->
+<h1>Animations</h1>
+<p>Watch the colorful square making a square.</p>
+<div></div>
+<!-- 
+ div background-color is Royal Purple
+0%  the background color is Scarlet
+25% the background color is Middle Yellow
+50% the background color is Cerulean
+75% the background color is Forest Green
+100% the background color is Maroon-->
+    
+    </body>
+     <footer>
+    <a href="CSS.html">CSS</a>
+</footer>
+</html>

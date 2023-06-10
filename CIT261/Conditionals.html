@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conditionals</title>
+        <meta charset="UTF-8">
+<style>
+    body {
+        background-color:#5DADEC;
+        font-family: 'Lucida Sans Unicode', sans-serif;
+    }
+</style>
+    </head>
+    <body>
+        <!-- background-color is Blue Jeans -->
+      <h1>Conditionals</h1>
+<p>Enter 1 for "Good Morning", 2 for "Good Night" and for anything other is "Have a Good Day!" : <input type="number" id="results"=></input>
+<button onclick="conditional()">Submit Me</button></p>
+
+<p id="condTimes"></p>  
+
+<script>
+function conditional() {
+    var times;
+    var time = document.getElementById("results").value;
+    if (time == 1) {
+        times = "Good Morning";
+    } 
+    else if (time == 2) {
+        times = "Good Night";
+    } 
+    else {
+        times = "Have a Good Day!";
+    }
+document.getElementById("condTimes").innerHTML = times;
+}
+</script>
+    </body>
+    <br>
+    <br>
+    <br>
+    <footer>
+     <a href="Loops,Conditionals,Functions,Parameters,&Arrays.html"> Loops, Conditionals, Functions, Parameters, and Arrays</a>    
+    </footer>
+    </html>

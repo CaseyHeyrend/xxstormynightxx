@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Animations</title>
+        <meta charset="UTF-8">
+<style>
+    body{
+        font-family: 'Lucida Sans Unicode', sans-serif;
+        background-color:#29AB87;
+    }
+#container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: #0081AB;
+}
+#animate {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #DB5079;
+}
+</style>
+</head>
+<body>
+    <h1>DOM Animations</h1>
+<!--
+Big square is Steel Blue
+Little Square is Blush
+-->
+ <!-- background-color is Jungle Green -->
+<p>
+<button onclick="moveSquare()">Move Me</button>
+</p> 
+
+<div id ="container">
+<div id ="animate"></div>
+</div>
+
+<script>
+function moveSquare() {
+  var ele = document.getElementById("animate");   
+  var poss = 1;
+  var id = setInterval(frame, 6);
+  function frame() {
+    if (poss == 400) {
+      clearInterval(id);
+    } else {
+      poss++; 
+      ele.style.top = poss + 'px'; 
+      ele.style.left = poss + 'px'; 
+    }
+  }
+}
+</script>
+
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="DOM.html">DOM</a>
+</footer>
+</html>

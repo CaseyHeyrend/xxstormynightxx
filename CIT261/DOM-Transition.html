@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Transition</title>
+        <meta charset="UTF-8">
+        <style>
+     body{
+        font-family: 'Lucida Sans Unicode', sans-serif;
+        background-color:#29AB87;
+    }
+#myShape {
+    border: 2px solid black;
+    background-color: #FFDB00;
+    width: 300px;
+    height: 220px;
+    overflow: auto;
+}
+<!-- -->
+#myShape:hover {
+    background-color: #A50B5E;
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 300px;
+}
+</style>
+</head>
+<body>
+<!-- background-color is Jungle Green -->
+<!--DIV is Sizzling Sunrise
+Hover is Jazzberry Jam
+-->
+<h1>DOM Transition</h1>
+<p> Mouse over the box and watch it change.</p>
+<p> Or try click the button to see the transition like an animation.</p>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myShape">
+  <h1 align="center">My Box or is it?</h1>
+</div>
+
+<script>
+function myFunction() {
+    document.getElementById("myShape").style.WebkitTransition = "all 2s";   
+    document.getElementById("myShape").style.transition = "all 2s";      
+}
+</script>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <a href="DOM.html">DOM</a>
+</footer>
+</html>
