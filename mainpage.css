@@ -83,6 +83,16 @@ nav a.active,
   background-color: #DC143C;
   color: #fff;
 }
+#menu-button {
+  background: #DC143C;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: "daniel", sans-serif;
+  font-size: 1.2em;
+}
 
 /* =========================
 MAIN CONTENT (MOBILE)
