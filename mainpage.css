@@ -1,12 +1,11 @@
 /* AUTHOR : Casey Heyrend */
-/* =========================
-BASE (MOBILE FIRST)
-========================= */
+/* Base styles */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
 }
@@ -15,6 +14,7 @@ html {
   box-sizing: inherit;
 }
 
+/* Base styles */
 body {
   margin: 0;
   min-height: 100vh;
@@ -22,7 +22,7 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
+/* Header */
 header {
   background-color: #C0C0C0;
 }
@@ -33,9 +33,7 @@ header {
   width: 120px;
 }
 
-/* =========================
-NAVIGATION (MOBILE)
-========================= */
+/* Navigation */
 nav {
   display: none;
 }
@@ -44,26 +42,21 @@ nav.open {
   display: block;
 }
 
-nav ul,
-#Fnav ul {
+nav ul {
   list-style: none;
   background-color: #C0C0C0;
   text-align: center;
   padding: 0;
   margin: 0;
-
 }
 
-nav li,
-#Fnav li {
+nav li {
   font-family: "daniel", sans-serif;
   font-size: 1.2em;
   line-height: 40px;
-
 }
 
-nav a,
-#Fnav a {
+nav a {
   text-decoration: none;
   color: #000;
   display: block;
@@ -71,17 +64,16 @@ nav a,
   transition: 0.3s;
 }
 
-nav a:hover,
-#Fnav a:hover {
+nav a:hover {
   background-color: #DC143C;
   color: #fff;
 }
 
-nav a.active,
-#Fnav a.active {
+nav a.active {
   background-color: #DC143C;
   color: #fff;
 }
+
 #menu-button {
   background: #DC143C;
   color: #fff;
@@ -92,10 +84,7 @@ nav a.active,
   font-family: "daniel", sans-serif;
   font-size: 1.2em;
 }
-
-/* =========================
-MAIN CONTENT (MOBILE)
-========================= */
+/* Main */
 
 main {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -116,20 +105,50 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px auto;
 }
 
-/* =========================
-FOOTER (MOBILE)
-========================= */
-
-footer {
-  background-color: #C0C0C0;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid #000;
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  margin-top: 2rem;
+  padding: 1.5rem;
 }
 
-/* =========================
-ABOUT PAGE
-========================= */
+.footer-columns {
+  display: flex;
+  flex-direction: column; /* mobile */
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-section h3 {
+  margin-bottom: .5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,.3);
+  text-align: center;
+  font-size: .9rem;
+}
+
+
+/* About Page */
 
 .Casey {
   display: block;
@@ -140,9 +159,7 @@ ABOUT PAGE
   text-align: left;
 }
 
-/* =========================
-CONTACT FORM
-========================= */
+/* Contact Form & Contact Info */
 #contact-form {
   max-width: 700px;
   width: 95%;              /* IMPORTANT */
@@ -190,9 +207,7 @@ textarea.form-input {
   margin-top: 10px;
   font-weight: bold;
 }
-/* =========================
-SCHOOL LIST
-========================= */
+/* Projects & School */
 
 .list ul {
   list-style: none;
@@ -214,9 +229,7 @@ SCHOOL LIST
   color: #fff;
 }
 
-/* =========================
-INTERESTS
-========================= */
+/* Interests */
 
 figure {
   width: 275px;
@@ -234,11 +247,10 @@ figcaption {
   margin: auto;
 }
 
-/* =========================
-DESKTOP (900px+) (HORIZONTAL NAV)
-========================= */
+/* Desktop Mode */
 
 @media screen and (min-width: 900px) {
+  /* Navigation */
   #menu-button {
     display: none;
   }
@@ -249,22 +261,20 @@ DESKTOP (900px+) (HORIZONTAL NAV)
     align-items: center;
   }
 
-  nav ul,
-  #Fnav ul {
+  nav ul {
     display: flex;
     justify-content: center;
   }
 
-  nav li,
-  #Fnav li {
+  nav li {
     border-bottom: none;
   }
-  nav a,
-  #Fnav a {
+
+  nav a {
     padding: 15px 20px;
     font-size: 1.3em;
   }
-
+  /* Main */
   main {
     margin: 40px auto;
     max-width: 1000px;
@@ -275,5 +285,11 @@ DESKTOP (900px+) (HORIZONTAL NAV)
     float: right;
     width: 400px;
     margin: 0 0 20px 20px;
+  }
+  /* Footer */
+  .footer-columns {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
   }
 }
