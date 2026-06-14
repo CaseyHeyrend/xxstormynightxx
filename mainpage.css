@@ -208,23 +208,31 @@ textarea.form-input {
   font-weight: bold;
 }
 /* Projects & School */
-
-.list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
+#list {
+  max-width: 800px;
+  margin: 0 auto;
   background-color: #C0C0C0;
 }
 
-.list li a {
+#list ul {
+  columns: 2;
+  column-gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+#list li {
+  break-inside: avoid;
+  margin-bottom: .5rem;
+}
+
+#list li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-.list li a:hover {
+#list li a:hover {
   background-color: #DC143C;
   color: #fff;
 }
@@ -285,6 +293,9 @@ figcaption {
     float: right;
     width: 400px;
     margin: 0 0 20px 20px;
+  }
+    #list ul {
+    columns: 3;
   }
   /* Footer */
   .footer-columns {
