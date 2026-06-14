@@ -6,6 +6,7 @@
     <title>Contact Me</title>
         <link href="mainpage.css" rel="stylesheet" type="text/css"/>
     <script src="index.js" defer></script>
+    <script src="form.js" defer></script>
 
     </head>
     <body>
@@ -21,20 +22,29 @@
             </nav>
         </header>
         <main>
-        <h1>Contact Me</h1>
-            <div id="Form">
-                <form>
-                <h5>Name:</h5>
-                    <input class="Form" type="text" name="name" required="required" placeholder="Enter your name" />
-                <h5>Email:</h5>
-                    <input class="Form" type="email" name="email" required="required" placeholder="Enter your email" />
-                <h5>Subject:</h5>
-                    <input class="Form" type="text" name="subject" required="required" placeholder="Enter your message subject" />
-                <h5>Message:</h5>
-                <textarea class="Form" name="message" required="required" placeholder="Enter your message here..."></textarea><br />
-                    <input class="Button" type="submit" name="submit" value="Send" />
+            <section id="contact-form">
+            <h1>Contact Me</h1>
+
+                <form id="form">
+
+                <label for="name">Name</label>
+                    <input class="form-input" type="text" id="name" required>
+
+                <label for="email">Email</label>
+                    <input class="form-input" type="email" id="email" required>
+
+                <label for="subject">Subject</label>
+                    <input class="form-input" type="text" id="subject" required>
+
+                <label for="message">Message</label>
+                <textarea class="form-input" id="message" rows="6" required></textarea>
+
+                <button class="btn" type="submit">Send</button>
+
+                <p id="form-message"></p>
+
                 </form>
-            </div>
+            </section>
         <h3>Here is where you will be able to find me or reach me.</h3>
         <p>My twitter is <a href="https://twitter.com/XxStormyNightxX?lang=en">XxStormyNightxX.</a></p>
         <p> My phone number is 1-208-123-4567.</p>
@@ -56,7 +66,7 @@
         <details>
         <summary>All content &copy; XxStormyNightxX</summary>
         <p>Also by Casey Heyrend</p>
-        <p>2016-2022</p>
+        <p>2016-2026</p>
         </details>
     </footer>
 </body>

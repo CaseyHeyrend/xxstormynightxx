@@ -134,59 +134,53 @@ ABOUT PAGE
 /* =========================
 CONTACT FORM
 ========================= */
-
-#Form {
-  margin-top: 30px;
-  background-color: #C0C0C0;
-  padding: 10px;
+#contact-form {
+  max-width: 700px;
+  width: 95%;              /* IMPORTANT */
+  margin: 30px auto;
+  padding: 25px;
+  background: #C0C0C0;
+  border: 1px solid #000;
+  box-sizing: border-box;  /* IMPORTANT */
 }
 
-.Form {
-  margin-bottom: 8px;
+.form-input {
   width: 100%;
-  max-width: 653px;
-  font-size: 1.05em;
-  color: #3D414C;
+  padding: 10px;
+  margin: 8px 0 16px;
   border: 1px solid #000;
-  padding: 6px;
+  font-size: 1em;
+}
+.form-input,
+textarea.form-input {
+  width: 100%;
+  box-sizing: border-box;  /* prevents overflow */
 }
 
-.Form:hover {
+.form-input:focus {
   border-color: #DC143C;
+  outline: none;
+  box-shadow: 0 0 5px #DC143C;
 }
 
-.Form:focus {
-  border-color: #DDA0DD;
-  box-shadow: 0px 1px 2px #3D414C;
-}
-
-.Form, textarea {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
-textarea {
-  height: 250px;
-}
-
-.Button {
-  margin-top: 6px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #000;
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #DC143C;
+  color: white;
   border: 1px solid #000;
-  padding: 8px;
-  background-color: #DC143C;
-  box-shadow: 0px 1px 4px #DDA0DD;
+  font-size: 1.1em;
+  cursor: pointer;
 }
 
-.Button:hover {
-  color: #fff;
+.btn:hover {
+  background: #a10f2d;
 }
 
-.Button:active {
-  box-shadow: 0px 1px 2px #DDA0DD;
+#form-message {
+  margin-top: 10px;
+  font-weight: bold;
 }
-
 /* =========================
 SCHOOL LIST
 ========================= */
