@@ -1,0 +1,12 @@
+body {
+        background-color:#778BA5; /* Shadow Blue */
+        font-family: Lucida Sans Unicode, sans-serif;
+}
+
+footer {
+        background-color:#AAF0D1;
+        color:white;
+        clear:both;
+        text-align:center;
+        padding:5px;
+}
