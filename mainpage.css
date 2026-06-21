@@ -448,38 +448,57 @@ hr {
 /* Interests */
 #steam {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
-  width: 100%;
-  max-width: 400px;  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;  
   columns: 2;
-  column-gap: 2rem;
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+
+  max-width: fit-content;
+
 }
 
 #steam img {
   display: block;
   margin: auto;
   width: 100%;
-  max-width: 400px;
-}
 
-figure {
-  width: 275px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 40px 0 16px;
 }
+#pc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;  
+  columns: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
 
-figcaption {
-  color: #DC143C;
+  max-width: fit-content;
 }
-
-#fig {
-  max-width: 275px;
+#pc img {
+  display: block;
   margin: auto;
+  width: 100%;
+
 }
+#app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;  
+  columns: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  max-width: fit-content;
+}
+#app img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
 
 /* Desktop Mode */
 
